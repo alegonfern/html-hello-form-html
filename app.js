@@ -1,5 +1,7 @@
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Detengo envío por Default.
+document.getElementById('send').addEventListener('click', function(event) {
+    event.preventDefault(); // Detener el envío predeterminado del formulario
+    event.stopPropagation(); // Detener la propagación del evento para evitar conflictos
+  
 
     const cardNumber = document.getElementById('cardNumber').value;
     const cvc = document.getElementById('cvc').value;
