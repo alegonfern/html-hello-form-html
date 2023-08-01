@@ -18,8 +18,8 @@ document.getElementById('send').addEventListener('click', function (event) {
 
     if (isValid) {
         // Si todos los campos son válidos, limpiar el mensaje de error y enviar el formulario
-        // errorMsg.innerText = 'Todo en orden';
-        MessageEvent.innerText = 'Todo en orden';
+        errorMsg.innerText = 'Todo en orden';
+        alert('Todo en orden')
         document.getElementById('myForm').submit();
     }
 });
